@@ -12,7 +12,7 @@ def get_gatk4_opts(
     parse_intervals=True,
     parse_argument_file=True,
 ):
-    """Obtain gatk4 opts from input, output, params and resources"""
+    """Obtain gatk4 opts from input, output, and params"""
     gatk_opts = ""
     extra = snakemake.params.get_extra("extra", "")
 
