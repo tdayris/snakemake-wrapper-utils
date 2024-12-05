@@ -3,14 +3,14 @@ import sys
 
 def get_gatk4_opts(
     snakemake,
-    parse_ref=True,
-    parse_ref_dict=True,
-    parse_bam_index=True,
-    parse_bam_md5_digest=True,
-    parse_tbi=True,
-    parse_vcf_md5_digest=True,
-    parse_intervals=True,
-    parse_argument_file=True,
+    parse_ref=False,
+    parse_ref_dict=False,
+    parse_bam_index=False,
+    parse_bam_md5_digest=False,
+    parse_tbi=False,
+    parse_vcf_md5_digest=False,
+    parse_intervals=False,
+    parse_argument_file=False,
 ):
     """Obtain gatk4 opts from input, output, and params"""
     gatk_opts = ""
